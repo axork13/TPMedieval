@@ -24,7 +24,7 @@ namespace TPMedieval.Classes
             this.impot = 0;
         }
 
-        private void Vieillir()
+        public void Vieillir()
         {
             foreach(Roturier r in roturiers)
             {
@@ -45,17 +45,18 @@ namespace TPMedieval.Classes
             }
         }
 
-        private void Produire()
+        public void Produire()
         {
             // Todo
         }
 
-        private void Imposer()
+        public int Imposer()
         {
             foreach (Roturier r in roturiers)
             {
                 impot += r.Gain / 2;
             }
+            return impot;
         }
     }
 }
