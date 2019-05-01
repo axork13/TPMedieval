@@ -6,11 +6,11 @@ namespace TPMedieval.Classes
 {
     public abstract class Villageois
     {
-        private string nom;
-        private string prenom;
-        private int age;
+        protected string nom;
+        protected string prenom;
+        protected int age;
 
-        protected Villageois(string nom, string prenom, int age)
+        public Villageois(string nom, string prenom, int age)
         {
             this.nom = nom;
             this.prenom = prenom;
