@@ -9,7 +9,9 @@ namespace TPMedieval.Classes
         private int cout;
         public Paysan(string n, string p, int a, int cout) : base(n, p, a)
         {
-            this.cout = cout;
+            this.Cout = cout;
         }
+
+        public int Cout { get => cout; set => cout = value; }
     }
 }
